@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery Basics</title>
+        <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#hide").click(function() {
+                    $("a").attr("href","https://www.google.com");
+                    $("a").text("Google page");
+                });
+
+                $("#show").click(function() {
+                    $("a").attr("href","https://www.acadgild.com");
+                    $("a").text("jQuery Tutorial");
+                });
+
+
+
+            });
+            </script>
+
+    </head>
+    
+    <body>
+        <p id="para"> Press button to change the hyperlink and the written text</p>
+        <a href="www.acadgild.com" id='acadgild'>jQuery Tutorial</a> 
+        <div style="margin-top: 10px">
+        <button id="hide">change</button>
+        <button id="show">Show</button>
+        </div>
+    </body>
+</html>
